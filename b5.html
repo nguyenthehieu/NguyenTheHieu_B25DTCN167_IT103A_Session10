@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Món Nổi Bật Hôm Nay</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f3f3f3;
+    }
+    h2{
+        text-align: center;
+        margin: 20px;
+    }
+
+    .food-list {
+        width: 1200px;
+        max-width: 100%;
+        margin: auto;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .card {
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    }
+    .big img {
+        width: 100%;
+        height: 250px;
+       
+    }
+    .small img {
+        width: 100%;
+        height: 250px;
+    }
+    .medium img {
+        width: 100%;
+        height: 250px;
+    }
+
+    .info {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .info h3 {
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+
+    .info p {
+        color: #e67e22;
+        font-weight: bold;
+    }
+    .big {
+        width: 60%;
+    }
+
+    .small {
+        width: 20%;
+    }
+    .medium{
+        width: 40%;
+    }
+</style>
+<body>
+    <h2>Món Nổi Bật Hôm Nay</h2>
+
+    <div class="food-list">
+
+        <div class="card big">
+            <img src="./beef.jfif" alt="">
+            <div class="info">
+                <h3>Grilled Wagyu Beef Tenderloin</h3>
+                <p>1.200.000 đ</p>
+            </div>
+        </div>
+
+        <div class="card small">
+            <img src="./scallops.jfif" alt="">
+            <div class="info">
+                <h3>Seared Scallops</h3>
+                <p>320.000 đ</p>
+            </div>
+        </div>
+
+        <div class="card small">
+            <img src="./trufle.jfif" alt="">    
+            <div class="info">
+                <h3>Truffle Deviled Eggs</h3>
+                <p>180.000 đ</p>
+            </div>
+        </div>
+
+        <div class="card big">
+            <img src="./lobster.jfif" alt=""> 
+            <div class="info">
+                    <h3>Lobster Bisque</h3>
+                    <p>420.000 đ</p>
+                </div>
+        </div>
+
+        <div class="card medium">
+            <img src="gras.jfif" alt="">    
+            <div class="info">
+                <h3>Pan-Seared Foie Gras</h3>
+                <p>580.000 đ</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

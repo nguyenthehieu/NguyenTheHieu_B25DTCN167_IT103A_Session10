@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fine Dining</title>
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgba(255, 242, 227, 0.755);
+        flex-wrap: wrap;
+    }
+    header {
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .tag {
+        display: flex;
+    }
+    .tag p {
+        padding: 10px;
+    }
+    h2 {
+        margin: 30px;
+        text-align: center;
+    }
+    .post {
+        background-color: white;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 420px;
+        margin: 0 auto 40px;   
+        padding: 25px;
+    }
+    .post img {
+        width: 100%;
+        max-width: 350px;
+        margin-bottom: 15px;
+    }
+    .post h2 {
+        margin: 15px 0;
+    }
+    .post p {
+        margin-bottom: 20px;
+    }
+    .post button {
+        background-color: white;
+        color: orange;
+        border: none;
+        padding: 10px 22px;
+        font-size: 14px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .other {
+        text-align: center;
+    }
+    .other div {
+        background-color: white;
+        margin: 10px 400px;
+        border-radius: 10px;
+        text-align: left;
+        padding: 20px 30px;
+        box-shadow: 1px 1px 20px #cbcbcb;
+    }
+    .other div p{
+        padding-top: 15px;
+    }
+    footer {
+        background-color: black;
+        color: white;
+        margin: 25px 0;
+        text-align: center;
+        padding: 25px;
+        font-size: 15px;
+    }
+</style>
+<body>
+    <header>
+        <h3>Gourmet Insights</h3>
+        <div class="tag">
+            <p>Home</p>
+            <p>About</p>
+            <p>Post</p>
+            <p>Contact</p>
+        </div>
+    </header>
+    <h2>Bài Viết Nổi Bật</h2>
+    <section class="post">
+        <img src="./lobster.jfif" alt="">
+        <h2>Nghệ Thuật Plating Trong Fine Dining</h2>
+        <p>Khám phá cách các đầu bếp hàng đầu biến món ăn thành tác phẩm nghệ thuật, từ sáng tạo cơ bản đến sáng tạo đỉnh cao.</p>
+        <button>Đọc thêm -></button>
+    </section>
+    <h2>Các Bài Viết Khác</h2>
+    <section class="other">
+        <div>
+            <h3>Bí Quyết Chọn Nguyên Liệu Cao Cấp</h3>
+            <p>Từ Wagyu Nhật Bản đến hải sản tươi sống, học cách chọn nguyên liệu để tạo nên món ăn hoàn hảo</p>
+        </div>
+        <div>
+            <h3>Xu Hướng Ẩm Thực 2025</h3>
+            <p>Những phong cách plating mới và nguyên liệu đang lên ngôi trong thế giới Fine Dining.</p>
+        </div>
+        <div>
+            <h3>Hành Trình Của Một Đầu Bếp Michelin</h3>
+            <p>Chia sẻ từ đầu bếp từng đạt sao Michelin về đam mê và thử thách trong bếp</p>
+        </div>
+
+    </section>
+    <footer>
+        <p>&copy; 2025 Gourmet Insight. All rights reserved.</p>
+    </footer>
+</body>
+</html>
