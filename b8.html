@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Gourmet Restaurant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body {
+            background-color: #ffffff;
+            color: #222;
+        }
+        header {
+            background: #111;
+            color: #fff;
+            padding: 16px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #d4af37;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 24px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #d4af37;
+        }
+        .hero {
+            height: 420px;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                        url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1600") center/cover no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .hero button {
+            padding: 12px 28px;
+            border: none;
+            background: #d4af37;
+            color: #111;
+            font-weight: bold;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .hero button:hover {
+            background: #c19d2b;
+        }
+
+        .section {
+            padding: 70px 60px;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 28px;
+            margin-bottom: 40px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section h2::after {
+            content: "";
+            width: 60px;
+            height: 3px;
+            background: #d4af37;
+            display: block;
+            margin: 10px auto 0;
+        }
+
+        .dishes {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            flex-wrap: wrap; 
+        }
+        .dish-card {
+            width: 260px;
+            height: 320px;
+            border-radius: 14px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+        }
+
+        .dish-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .dish-card:hover img {
+            transform: scale(1.1); /* zoom nhẹ */
+        }
+
+        .overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.55);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            opacity: 0;
+            transition: 0.3s;
+            text-align: center;
+        }
+
+        .dish-card:hover .overlay {
+            opacity: 1;
+        }
+
+        .overlay h3 {
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+        .overlay p {
+            color: #d4af37;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        footer {
+            background: #111;
+            color: #aaa;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Khám phá Menu</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Menu</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <div>
+            <button>Khám phá Menu</button>
+        </div>
+    </section>
+    <section class="section">
+        <h2>Món Ăn Nổi Bật</h2>
+
+        <div class="dishes">
+            <div class="dish-card">
+                <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=800" alt="">
+                <div class="overlay">
+                    <h3>Seafood Platter</h3>
+                    <p>320.000đ</p>
+                </div>
+            </div>
+
+            <div class="dish-card">
+                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800" alt="">
+                <div class="overlay">
+                    <h3>Beef Steak</h3>
+                    <p>450.000đ</p>
+                </div>
+            </div>
+
+            <div class="dish-card">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=800" alt="">
+                <div class="overlay">
+                    <h3>Lobster Cheese</h3>
+                    <p>520.000đ</p>
+                </div>
+            </div>
+
+            <div class="dish-card">
+                <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=800" alt="">
+                <div class="overlay">
+                    <h3>Grilled Meat</h3>
+                    <p>380.000đ</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        © 2026 Gourmet Restaurant. All rights reserved.
+    </footer>
+</body>
+</html>
